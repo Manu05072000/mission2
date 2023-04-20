@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*to box model*/
+}
+/*global*/
+body{
+    font-family: "Merienda" sans-serif;
+    background-color: #c0d0ee;
+    overflow-x: hidden;
+}
+.button-primary{
+    background-image:linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar--brand{
+    width: 100px;
+}
+.navbar--logo{
+    width: 100%;
+}
+.hero-container{
+    width: 100%;
+
+}
+.hero-image-container{
+    width: 100%;
+
+}
+
+.explore-menu-list{
+    display: flex;
+    gap: 8px;
+}
+.hero-text{
+    font-size: 30px;
+    color: #1d3557;
+    margin: 20px 0;
+}
+/*food menu cards*/
+.explore-menu-container{
+    margin-top: 100px;
+}
+.explore-menu-text{
+    font-size: 30px;
+    color: #1d3557;
+    margin: 20px 0;
+    text-align: center;
+}
+.food-menu-card{
+    width: 50%;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    margin-bottom: 15px;
+
+}
+.food-image{
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+.food-menu-card-description{
+    padding: 20px;
+}
+.explore-menu-view-more{
+    display: flex;
+    justify-content: center;
+}
+.explore-menu-list{
+    display: flex;
+    
+}
+/*flex*/
+.restuarants-description{
+    font-size: 30px;
+    color: #1d3557;
+    margin: 20px 0;
+    text-align: center
+
+}
+.restuarants-flex-row-one,.restuarants-flex-row-two{
+display: flex;
+    width: 100%;
+    gap: 4px;
+    
+
+}
+.restuarants-flex-row-one{
+    align-items: baseline;
+    margin-bottom: 4px;
+}
+.restuarant-1-image,.restuarant-2-image,.restuarant-3-image,.restuarant-4-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+
+}
+
+.restuarant-2,.restuarant-3{
+    width: 120px;
+    height: 200px;
+}
+.restuarant-1,.restuarant-4{
+    height: 250px;
+    width: 150px;
+}
+.rest{
+    
+}
+
+@media (min-width:768px) {
+    .navbar{
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    .navbar--brand{
+        width: 150px;
+    }
+    .button-primary{
+        padding:12px 20px;
+        font-size: 20px;
+    }
+    .hero-container{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .explore-menu-container{
+        position: relative;
+    }
+    .explore-menu-gradient-bg{
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        height: 100%;
+        width: 100%;
+        background-image:linear-gradient(
+            to right,
+            #ff512f 0%,
+            #dd2476 51%,
+            #ff512f 100%
+        );
+        z-index:-3;
+        transform: skewY(-5deg);
+    }
+    .explore-menu-lists{
+        margin-top: 60px;
+        display:flex;
+        gap: 8px;
+    }
+    #pizza-card{
+        margin-top: -30px;
+        margin-bottom: 40px;
+    }
+    .restuarants-description{
+        font-size: 40px;
+        width: 100%;
+        color: #1d3557;
+        margin: 20px 0;
+        text-align: center
+    
+    }
+    .restuarant-container{
+        display: flex;
+        align-items: center;
+    }
+    .restuarant-flex{
+        width: 100%;
+    }
+    
+}
+@media (min-width:1020px) {
+    .container{
+        max-width:1010px;
+    }
+    
+    .hero-text{
+        font-size: 50px;
+    }
+    .explore-menu-lists{
+        gap: 20px;
+        padding:0 20px;
+    }
+    .explore-menu-text{
+        font-size: 50px;
+    }
+    .restuarant-container{
+        margin-top:30px ;
+    }
+
+    
+}
+@media (min-width:1400px) {
+    .container{
+        max-width: 1250px;
+    }
+    
+}
